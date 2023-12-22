@@ -1,8 +1,6 @@
 # Hermes: Empowering agEUR Holders with Real-time Insights
 
-<div align="center">
-    <img src="/hermes.png" alt="Hermes logo" style="width: 320px;">
-</div>
+![](hermes.png)
 
 --------------
 
