@@ -38,6 +38,11 @@ In essence, Mercury serves as a critical tool for agEUR holders, offering a comp
 
 [`Mercury project proposal right here >>>`](https://docs.google.com/presentation/d/1mkrulPMkef52mL-CG7tExo7aubhovK16ktxU8hrwTsw/edit#slide=id.g1e406ff4dcb_0_87)
 
+## Mercury Frontend
+
+[`Mercury Frontend`](https://mercury-frontend-demo.onrender.com/)
+
+
 ## Resources
 - [Angle](https://www.angle.money/)
 - [Angle Docs](https://docs.angle.money/overview/readme)
