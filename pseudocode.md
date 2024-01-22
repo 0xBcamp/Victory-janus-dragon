@@ -11,7 +11,7 @@ Below are pseudocodes that will help us understand the requirements of the smart
     - Objective: Allow registered users to connect their wallets securely to the platform.
     - Smart Contract Pseudocode: 
 
-        ```
+        ```solidity
         Contract WalletMonitor {
             mapping (address => bool) public connectedWallet;
             address[] public listOfConnectedWallets;
@@ -37,7 +37,7 @@ Below are pseudocodes that will help us understand the requirements of the smart
     - Objective: Observing transactions on the agEUR stablecoin for the connected wallet.
     - Smart Contract Pseudocode: 
 
-        ```
+        ```solidity
         Contract TransactionMonitor is WalletMonitor {
             event TransactionAlert(address sender, address receiver, uint256 amount, string transactionType);
 
@@ -69,7 +69,7 @@ Below are pseudocodes that will help us understand the requirements of the smart
     - Objective: Sending email alerts to users based on monitored transactions.
     - Smart Contract Pseudocode:
 
-        ```
+        ```solidity
         contract AlertNotifier is TransactionMonitor {
             // integrate with an external email service
             private string emailService;
