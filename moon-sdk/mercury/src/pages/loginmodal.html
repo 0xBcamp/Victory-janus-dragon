@@ -1,0 +1,55 @@
+<div className="wrapper" id="wrapper-login">
+<span className="icon-close" onClick={CloseModalLogin}>X</span>
+
+<h2>Login</h2>
+<div className="form-box signup mb-6">
+
+{signInSuccess && isConnected && (
+				<div className="mt-4 text-center">
+					<p>Authenticated Address: {authenticatedAddress}</p>
+					<button
+						type="button"
+						className="bg-red-500 text-white p-2 rounded mt-2"
+						onClick={handleDisconnect}
+					>
+						{loading ? 'Disconnecting...' : 'Disconnect from Moon'}
+					</button>
+					{error && <p className="text-red-500 mt-2">{error}</p>}
+				</div>
+			)}
+{!isConnected && (
+	
+<form className="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4 w-96">
+						<div className="mb-4 input-box">
+							<input
+								type="email"
+								placeholder="Email"
+								className="w-full border p-2 rounded mb-2"
+								value={email}
+								onChange={handleEmailChange}
+							/>
+						</div>
+						<div className="mb-4 input-box">
+							<input
+								type="password"
+								placeholder="Password"
+								className="w-full border p-2 rounded mb-2"
+								value={password}
+								onChange={handlePasswordChange}
+							/>
+						</div>
+						<div className="flex justify-center">
+							<button
+								type="button"
+								className="bg-blue-500 text-white p-2 rounded"
+								onClick={handleSignIn}
+							>
+								{loading ? 'Signing in...' : 'Sign In'}
+							</button>
+							{error && <p className="text-red-500 ml-2">{error}</p>}
+						</div>
+					</form>
+)}
+
+</div>			
+</div>
